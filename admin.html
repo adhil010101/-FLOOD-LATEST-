@@ -165,7 +165,7 @@ function setMeta(m){lsSet('meta',m)}
 function addActivity(txt){const m=getMeta();m.activity.unshift({time:Date.now(),text:txt});m.activity=m.activity.slice(0,300);setMeta(m);renderActivity()}
 
 /* LOGIN */
-const ADMIN_ID='admin',ADMIN_PASS='admin'
+const ADMIN_ID='admin',ADMIN_PASS='admin123'
 document.getElementById('loginBtn').onclick=function(){
   const id=document.getElementById('adminId').value.trim(),pw=document.getElementById('adminPass').value
   if(id===ADMIN_ID&&pw===ADMIN_PASS){sessionStorage.setItem('adminLogged','1');showAdmin()}
